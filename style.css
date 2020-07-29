@@ -1,0 +1,100 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-width: 1000px;
+}
+#black-bar {
+     background-color: rgb(0,18,49);
+     color: white;
+     padding: 20px 0;
+}
+#black-bar a {
+    color:white;
+}
+.fixed-container {
+    width: 960px;
+    margin: 0 auto;
+   position: relative;
+}
+#datetime {
+    float: right;
+}
+
+#logo {
+      position: absolute;
+      top: 40px;
+}
+#city {
+      position: absolute;
+      top: 54px;
+      left: 180px;
+}
+#weather {
+      position: absolute;
+      top: 49px;
+      left: 550px;
+}
+#search {
+      position: absolute;
+      top:54px;
+      right: 0;
+}
+#main, #polite, #social, #ec, #in-world, #incidents, #sport, #sience, #turism {
+      position: absolute;
+      top: 122px;
+}
+#polite{
+      left: 105px;
+}
+#social {
+      left: 215px;
+}
+#ec {
+      left: 328px;
+}
+#in-world {
+      left: 448px;
+}
+#incidents {
+      left: 540px;
+}
+#sport {
+      left: 680px;
+}
+#sience {
+      left: 768px;
+}
+#turism {
+      left: 851px;
+}
+
+
+.slash1, .slash2, .slash3, .slash4, .slash5, .slash6, .slash7, .slash8  {
+     position: absolute;
+      top:120px;
+}
+.slash1 {
+      left: 78px;
+}
+.slash2 {
+      left: 191px;
+}
+.slash3 {
+      left: 305px;
+}
+.slash4 {
+      left: 425px;
+}
+.slash5 {
+      left: 518px;
+}
+.slash6 {
+      left: 657px;
+}
+.slash7 {
+      left: 742px;
+}
+.slash8 {
+      left: 830px;
+}
+
