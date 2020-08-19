@@ -1,77 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Новостное агентство</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="script.js"></script>
 </head>
+
 <body>
-    <div id="black-bar">
-        <div class="fixed-container">
-             Самые <a href="#">свежие новости</a> в реальном времени
-            <div id="datetime">12:30 19.06.2018</div>
+  <main class="fixed-container">
+    <div id="central-container">
+
+      <div id="left-column">
+        <h2 id="left-h2">Список дел:</h2>
+        <!--
+        <span>Список пуст...</span>
+      -->
+        <div class="left-white-box">
+
+          <div class="left-top-box">
+            <div class="left-white-content">
+              <h3 class="right-h3  left-h3">Купить лошадь</h3>
+              <button class="cross"></button>
+            </div>
+          </div>
+
+          <div class="left-bottom-box">
+            <div class="left-white-content">
+              <p class="left-disc">По цене 300 т.р. за штуку </p>
+            </div>
+          </div>
+
         </div>
-    </div>
-    <div id="header">
-          <div class="fixed-container">
-                <img id="logo" src="img/logo.png" alt="logo">
-                <div id="city">
-                    <img src="img/city.png">
-                </div>
-                <div id="weather">
-                      <img src="img/weather.png" alt="weather">
-                </div>
-                <input id="search" type="search" placeholder="Поиск по сайту">
-                <div id="menu">
-                      <div id="main">Главная</div>
-                      <div id="polite">Политика</div>
-                      <div id="social">Общество</div>
-                      <div id="ec">Экономика</div>
-                      <div id="in-world">В мире</div>
-                      <div id="incidents">Происшествия</div>
-                      <div id="sport">Спорт</div>
-                      <div id="sience">Наука</div>
-                      <div id="turism">Туризм</div>
-                </div>
-                <div id="slash">
-                      <img class="slash1" src="img/slash.png" alt="slash">
-                      <img class="slash2" src="img/slash.png" alt="slash">
-                      <img class="slash3" src="img/slash.png" alt="slash">
-                      <img class="slash4" src="img/slash.png" alt="slash">
-                      <img class="slash5" src="img/slash.png" alt="slash">
-                      <img class="slash6" src="img/slash.png" alt="slash">
-                      <img class="slash7" src="img/slash.png" alt="slash">
-                      <img class="slash8" src="img/slash.png" alt="slash">
-                </div>
+
+
+
+        <div class="left-white-box">
+
+          <div class="left-top-box">
+            <div class="left-white-content">
+              <h3 class="right-h3  left-h3">Купить лошадь</h3>
+              <button class="cross"></button>
+            </div>
           </div>
-    </div>
-	<div id="central-container">
-          <div class="fixed-container">
-           <div id="column-left">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</div>
-           
-           <div id="column-center">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.<br><br>
-           
-                 <div class="list">
-                       <div class="list-item">Num 1</div>
-                       <div class="list-item">Num 2</div>
-                       <div class="list-item">Num 3</div>
-                            
-                 </div>
-           
-           <br><br>
-           
-           </div>
-           
-           <div id="column-right">
-                 <img alt="banner" src="img/banner1.png">
-                 <img alt="banner" src="img/banner2.png">
-           </div>
+
+          <div class="left-bottom-box">
+            <div class="left-white-content">
+              <p class="left-disc">По цене 300 т.р. за штуку </p>
+            </div>
           </div>
+
+        </div>
+
+
+
+
+
+        <div class="left-white-box">
+
+          <div class="left-top-box">
+            <div class="left-white-content">
+              <h3 class="right-h3  left-h3">Купить лошадь</h3>
+              <button class="cross"></button>
+            </div>
+          </div>
+
+          <div class="left-bottom-box">
+            <div class="left-white-content">
+              <p class="left-disc">По цене 300 т.р. за штуку </p>
+            </div>
+          </div>
+
+        </div>
+
+
+
       </div>
-      <div class="fixed-container">
-      <div id="special-news">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+
+
+
+
+
+      <div id="right-column">
+        <h2 id="right-h2">Добавить новое дело</h2>
+        <div id="right-white-box">
+          <div id="right-white-content">
+
+            <form>
+              <h3 class="right-h3"><sup>*</sup> Название</h3>
+              <input id="right-name" type="text">
+
+              <h3 class="right-h3"><sup>*</sup> Описание</h3>
+              <textarea id="right-disc" maxlength="342"></textarea>
+
+              <button id="right-button" type="submit">Добавить дело</button>
+            </form>
+          </div>
+        </div>
       </div>
-      </div>
+
+
+
+
+
+
+    </div>
+  </main>
 </body>
+
 </html>
