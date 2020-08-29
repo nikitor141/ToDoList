@@ -160,4 +160,9 @@ textarea:focus, input:focus, button:focus{
   border: 0;
   background-color: #2174fd;
   color: #ffffff;
+  cursor: pointer;
+}
+#right-button:active {
+/*color: #dddddd;*/
+background-color: #1369f7;
 }
