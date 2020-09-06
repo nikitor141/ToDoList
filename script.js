@@ -36,18 +36,26 @@ if($('#box-parent').children().length < 3){
     $('.left-disc').last().html(get_right_disc);
 }
 
-if($('#box-parent').children().length == 3){
-  alert('Перебор');
-}
+
 
 $('#left-h2').css('margin-bottom', '29px')
 $('span').remove()
+if($('#right-name', '#right-disc').val('')){
+
+}
   });
 
-  $('.cross').click(function() {
+
+
+
+  $('body').on("click",'.cross' ,function() {
     $(this)
     .parents('.left-white-box')
     .remove();
+    if ($('#box-parent').children().length < 1) {
+      $('#left-column').append('<span>Список пуст...</span>');
+      span_css();
+    }
   });
 
 
