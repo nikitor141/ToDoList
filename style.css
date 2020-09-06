@@ -134,6 +134,7 @@ padding-right: 42px;
   font-size: 17px;
   padding-left: 13px;
   padding-right: 13px;
+  text-transform: capitalize;
 }
 #right-disc {
   resize: none;
@@ -145,6 +146,9 @@ padding-right: 42px;
   padding: 16px 13px;
   font-size: 17px;
   -ms-overflow-style: none;
+}
+#right-disc::first-letter {
+  font-size: 29px;
 }
 #right-disc::-webkit-scrollbar {
    width: 0;
