@@ -16,13 +16,20 @@ function span_css(){   $('#left-h2')
 
 
 
+($('#right-name , #right-disc').on('keyup', function(){
+if($('#right-name , #right-disc').val('')){
+  $('#right-button').attr('disabled', 'disabled')
+}else{
+  $('#right-button').removeattr('disabled' , 'disabled')
+}
 
-
-
-
+}))
 
 
   $('#right-button').click(function(){
+    
+    
+    
 if($('#box-parent').children().length < 3){
     $('#box-parent').append('<div class="left-white-box"><div class="left-top-box"><div class="left-white-content"><h3 class="right-h3  left-h3"></h3><button class="cross"></button></div></div><div class="left-bottom-box"><div class="left-white-content"><p class="left-disc"></p></div></div></div>');
 
@@ -36,6 +43,7 @@ if($('#box-parent').children().length < 3){
     $('.left-disc').last().html(get_right_disc);
 }
 
+    $('#right-name , #right-disc').val('');
 
 
 $('#left-h2').css('margin-bottom', '29px')
