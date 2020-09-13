@@ -66,8 +66,24 @@ h3.left-h3 {
   border: 0;
   background-color: transparent;
   cursor: pointer;
-
 }
+
+.arrow {
+  background-image: url(img/arrow.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 8px;
+  height: 7px;
+  float: right;
+  margin-top: 6px;
+  margin-right: 6px;
+  border: 0;
+  cursor: pointer;
+}
+.rotate-arrow {
+  transform: rotate(90deg);
+}
+
 .left-bottom-box {
   height: 85px;
 
@@ -134,7 +150,7 @@ padding-right: 42px;
   font-size: 17px;
   padding-left: 13px;
   padding-right: 13px;
-  
+
 }
 #right-disc {
   resize: none;
@@ -163,7 +179,7 @@ textarea:focus, input:focus, button:focus{
   background-color: #2174fd;
   color: #ffffff;
   cursor: pointer;
- 
+
 }
 #right-button:active {
 /*color: #dddddd;*/
