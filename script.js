@@ -17,28 +17,19 @@ $(function() {
 
 
 
-  // ($('#right-button').on('click', function() {
-  //   if ($('#right-name , #right-disc')(.val().length < 1)) {
-  //     $('#right-button').attr('disabled', 'disabled')
-  //   } else {
-  //     $('#right-button').removeAttr('disabled')
-  //   }
-  //
-  // }))
-
-
   $('#right-button').click(function() {
 
 
 
     if ($('#box-parent').children().length < 3) {
-      $('#box-parent').append('<div class="left-white-box"><div class="left-top-box"><div class="left-white-content"><h3 class="right-h3  left-h3"></h3><button class="cross"></button></div></div><div class="left-bottom-box"><div class="left-white-content"><p class="left-disc"></p></div></div></div>');
+          $('#box-parent').append('<div class="left-white-box"><div class="left-top-box"><div class="left-white-content"><h3 class="right-h3  left-h3"></h3><button class="cross"></button><button class="arrow"></button></div></div><div class="left-bottom-box"><div class="left-white-content"><p class="left-disc"></p></div></div></div>')
 
 
 
 
-      var get_right_name = $('#right-name').val(); //Получаем данные из input
-      $('.left-h3').last().html(get_right_name); //Вставляем значение в тег
+
+      var get_right_name = $('#right-name').val();
+      $('.left-h3').last().html(get_right_name);
 
       var get_right_disc = $('#right-disc').val();
       $('.left-disc').last().html(get_right_disc);
@@ -68,6 +59,25 @@ $(function() {
   });
 
 
+
+  $('body').on("click", '.arrow', function() {
+    $('.arrow')
+      .toggleClass('rotate-arrow');
+    if ($('.left-bottom-box').is(':visible')) {
+      $('.left-bottom-box').hide(300);
+      $('.left-white-box').remove();
+
+    }
+    else{
+      $('.left-bottom-box').show(300);
+
+    }
+
+  });
+
+
+
+
   if ($('#box-parent').children().length < 1) {
     $('#left-column').append('<span>Список пуст...</span>');
     span_css();
@@ -75,14 +85,7 @@ $(function() {
 
 
 
-  /*$('.cross').click(function() {
 
-    if ($('#box-parent').children().length < 1) {
-
-      $('#left-column').append('<span>Список пуст...</span>');
-
-    }
-  });*/
 
 
 
