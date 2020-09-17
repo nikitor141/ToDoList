@@ -16,17 +16,20 @@ $(function() {
   }
 
 
+// $('html').on('keyup', '#right-name , #right-disc' , function(){
+//
+//   if ($('#right-name', '#right-disc').val(length >=0)) {
+//     $('#right-button').removeAttr('disabled');
+//   }else {
+//     $('#right-button').attr('disabled', 'disabled');
+//
+//   }
+// });
 
   $('#right-button').click(function() {
 
-
-
     if ($('#box-parent').children().length < 3) {
       $('#box-parent').append('<div class="left-white-box"><div class="left-top-box"><div class="left-white-content"><h3 class="right-h3  left-h3"></h3><button class="cross"></button><button class="arrow"></button></div></div><div class="left-bottom-box"><div class="left-white-content"><p class="left-disc"></p></div></div></div>');
-
-
-
-
 
       var get_right_name = $('#right-name').val();
       $('.left-h3').last().html(get_right_name);
@@ -40,9 +43,7 @@ $(function() {
 
     $('#left-h2').css('margin-bottom', '29px');
     $('span').remove();
-    if ($('#right-name', '#right-disc').val('')) {
 
-    }
   });
 
 
@@ -105,3 +106,16 @@ else{
 
 
 });
+$('html').on('click', '#right-button' , checkParams);
+
+
+function checkParams(){
+    var name = $('#right-name').val();
+    var disc = $('#right-disc').val();
+
+    if(name.length != 0 && disc.length != 0) {
+        $('#right-button').removeAttr('disabled');
+    } else {
+        $('#right-button').attr('disabled', 'disabled');
+    }
+  }
