@@ -16,15 +16,6 @@ $(function() {
   }
 
 
-// $('html').on('keyup', '#right-name , #right-disc' , function(){
-//
-//   if ($('#right-name', '#right-disc').val(length >=0)) {
-//     $('#right-button').removeAttr('disabled');
-//   }else {
-//     $('#right-button').attr('disabled', 'disabled');
-//
-//   }
-// });
 
   $('#right-button').click(function() {
 
@@ -106,7 +97,10 @@ else{
 
 
 });
+
+
 $('html').on('click', '#right-button' , checkParams);
+
 
 
 function checkParams(){
@@ -117,7 +111,6 @@ function checkParams(){
         $('#right-button').removeAttr('disabled').css({
           'background-color': '#2174fd',
           'cursor': 'pointer'
-
       });
 
     } else {
@@ -125,5 +118,9 @@ function checkParams(){
           'background-color': '#98baed',
           'cursor': 'default'
         });
+    }
+    if($('#right-button').is(':active')){
+
+      $('#right-button').css('background-color', '#1369f7');
     }
   }
