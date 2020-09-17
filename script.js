@@ -114,8 +114,9 @@ function checkParams(){
     var disc = $('#right-disc').val();
 
     if(name.length != 0 && disc.length != 0) {
-        $('#right-button').removeAttr('disabled');
+        $('#right-button').removeAttr('disabled').css('background-color', '#2174fd');
+
     } else {
-        $('#right-button').attr('disabled', 'disabled');
+        $('#right-button').attr('disabled', 'disabled').css('background-color', '#98baed');
     }
   }
