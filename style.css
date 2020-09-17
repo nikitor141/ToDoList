@@ -178,7 +178,7 @@ textarea:focus, input:focus, button:focus{
   border: 0;
   background-color: #98baed;
   color: #ffffff;
-  cursor: pointer;
+  
 
 }
 #right-button:active {
